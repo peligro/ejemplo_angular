@@ -1,0 +1,28 @@
+<div class="starter-template">
+ 	<div class="panel panel-info">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Nuestros Servicios</div>
+	  <div class="panel-body">
+	    <table class="table table-bordered">
+	    	<thead>
+	    		<tr>
+	    			<th>Posición</th>
+	    			<th>UID</th>
+	    			<th>Nombre</th>
+	    			<th>Descripción</th>
+	    		</tr>
+	    	</thead>
+	    	<tbody>
+	    		<tr *ngFor="let servicio of servicios;let i =index;">
+	    			<td>{{i}}</td>
+	    			<td>{{servicio.uid}}</td>
+	    			<td>{{servicio.nombre}}</td>
+	    			<td>{{servicio.descripcion}}</td>
+	    		</tr>
+	    		
+	    		
+	    	</tbody>
+	    </table>
+	  </div>
+  </div>
+</div>

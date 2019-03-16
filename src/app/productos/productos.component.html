@@ -1,0 +1,19 @@
+ <div class="starter-template">
+ 	<h1>Nuestros productos</h1>
+	<div class="row">
+	  <!--ítem-->
+	  <div *ngFor="let producto of productos; let i=index" class="col-sm-6 col-md-4">
+	    <div class="thumbnail">
+	      <img src="{{producto.imagen}}" alt="{{producto.nombre}}" />
+	      <div class="caption">
+	        <h3>{{producto.nombre}} ({{i}})</h3>
+	        <p>{{producto.epigrafe}}</p>
+
+	        <p><a routerLink="/productos/{{producto.uid}}" class="btn btn-primary" role="button" title="{{producto.nombre}}">Ver más</a></p>
+	      </div>
+	    </div>
+	  </div>
+	  <!--/ítem-->
+	
+	</div>
+ </div>
