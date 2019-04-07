@@ -1,0 +1,27 @@
+<div class="container">
+	<h1>{{titulo}}</h1><hr />
+	<div class="media"  *ngFor="let post of posts; let i=index">
+	  <div class="media-left media-middle">
+	    <a href="#" title="{{post.titulo}}">
+	      <img class="media-object" src="{{post.foto}}" alt="{{post.titulo}}" style="width: 100px; height: 100px" />
+	    </a>
+	  </div>
+	  <div class="media-body">
+	    <h4 class="media-heading"><a href="" title="{{post.titulo}}">{{post.titulo}}</a></h4>
+	    {{post.detalle.substring(0, 200)}}.....
+
+
+	  </div>
+	</div>
+
+
+
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+
+</div>
